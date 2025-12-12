@@ -36,6 +36,23 @@ h1 {
     animation: fadeIn 1.5s ease;
 }
 
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: #c59dff,#5424bb,#000000;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .card {
     background: rgba(255, 255, 255, 0.08);
@@ -71,6 +88,59 @@ h1 {
     line-height: 1.65em;
     color: #ececec;
 }
+
+/* Remove qualquer blur possível */
+header, .topbar, .title-section, h1, .logo {
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+    /* ===== NAVBAR ===== */
+header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 .name {
     font-size: 20px;
