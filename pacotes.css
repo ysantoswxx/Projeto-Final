@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #050505;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacotes-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1300px;
+}
+
+
+.titulo {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.titulo span {
+    color: #b888ff;
+}
+
+
+.cards-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    position: relative;
+    background: #0c0c0c;
+    border-radius: 15px;
+    width: 330px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #222;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 80px;
+    margin-bottom: 10;
+}
+
+.card p {
+    margin-top: 15px;
+    line-height: 1.45;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+   /* Ícones no canto superior direito */
+.icon {
+    position: absolute;
+    top: 15px;      /* distância do topo */
+    right: 15px;    /* distância da direita */
+    width: 70px;    /* tamanho do ícone */
+    height: auto;
+    margin: 0;      /* remove centralização */
+}
+
+
+/* Card de destaque */
+.destaque {
+    background: linear-gradient(160deg, #1b0030, #140014 60%, #0d0d0d 100%);
+    
+}
+
+.icon {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* CENTRALIZA A IMAGEM */
+    margin-top: 15px;
+}
