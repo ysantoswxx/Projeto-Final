@@ -187,3 +187,99 @@ footer {
         align-items: center;
     }
 }
+
+
+
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+body {
+    margin: 0;
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* ===== TÍTULO E CONTEÚDO SUPERIOR ===== */
+.top-section h1 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+
+.top-section h1 span {
+    color: #b285ff;
+}
+
+.descricao {
+    color: #cccccc;
+    line-height: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.explore {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+/* CARD PADRÃO */
+.card {
+    width: 190px;
+    height: 170px;
+    background: #0b0b12;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.08);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;  /* necessário para posicionar a imagem */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* CARD SELECIONADO */
+.selected {
+    border: 2px solid #a45cff;
+}
+
+/* CARD ALTO (WEB DESIGN) */
+.tall {
+    height: 250px;
+}
+
+/* Texto dentro dos cards */
+.card p {
+    margin: 0;
+    font-size: 0.95rem;
+    margin-top: 50px; /* espaço para não sobrepor a imagem */
+}
+
+/* ===== IMAGENS DOS CARDS ===== */
+.card-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: absolute; /* posiciona livremente dentro do card */
+    top: 10px;          /* distância do topo do card */
+    right: 10px;        /* distância da direita do card */
+}
+
+/* REMOVIDO: ícones simulados, não usados mais */
+/* .icon { ... } */
