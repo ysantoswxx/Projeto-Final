@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Barra de navegação no topo */
+.barra_navegacao {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end; /* mantém no canto direito */
+    padding: 10px 0px; /* padding menor para não cortar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    gap: 20px; /* espaço entre os links */
+    flex-wrap: wrap; /* permite quebrar linha se necessário */
+}
+
+.barra_navegacao a {
+    margin-right: 20px; /* empurra levemente para a esquerda */
+}
+.barra_navegacao a {
+    color: #c7c7c7;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: 0.1s;
+    white-space: nowrap; /* não quebra palavras */
+}
+
+.barra_navegacao a:hover {
+    color: #c59dff;
+    text-shadow: 0 0 10px #c59dff;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .barra_navegacao {
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Logo centralizado abaixo da barra */
+.logo-container {
+    text-align: center;
+    margin-top: 80px; /* espaço para a barra fixa */
+    margin-bottom: 40px;
+}
+
+.logo-container img.logo {
+    height: 80px;
+}
+
+/* CONTAINER PRINCIPAL */
+.pagina-inicial-container {
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* H3 e botão */
+.content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content h3 span {
+    color: #c59dff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b37bff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background-color: #7a4ccc;
+}
+
+/* H4 e parágrafo lado a lado */
+.content .texto-lado {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.content .texto-lado h4 {
+    font-size: 2rem;
+    color: #c59dff;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.content .texto-lado p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Container de imagens lado a lado */
+.content .imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.content .imagens img {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content .imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(197, 157, 255, 0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .barra_navegacao {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        position: fixed;
+    }
+
+    .content .texto-lado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content .texto-lado p {
+        max-width: 90%;
+    }
+
+    .content .imagens img {
+        width: 90%;
+    }
+}
